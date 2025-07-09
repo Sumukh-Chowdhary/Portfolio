@@ -2,62 +2,159 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sumukh-Chowdhary || Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumukh Chowdhary || Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Lato', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #fdfdfd;
+      color: #2d2d2d;
+      line-height: 1.6;
+      transition: background 0.5s, color 0.5s;
+    }
+
+    header {
+      background: linear-gradient(to right, #00416a, #e4e5e6);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 1rem;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-family: 'Playfair Display', serif;
+      animation: slideIn 1.5s ease-out;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #00416a;
+      border-bottom: 2px solid #00416a;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      padding: 0.5rem 0;
+    }
+
+    a {
+      color: #00416a;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #002b4f;
+      text-decoration: underline;
+    }
+
+    .project, .certifications, #skills ul, #achievements ul {
+      background: #ffffff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      margin-bottom: 2rem;
+      transition: transform 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background: #00416a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    #contact p {
+      margin: 0.3rem 0;
+    }
+
+    .project h3 {
+      color: #003355;
+    }
+  </style>
 </head>
 <body>
   <header>
     <div class="hero">
-      <img src="new pic.jpg" alt="Your Photo">
+      <img src="new pic.jpg" alt="Profile Photo">
       <h1>Sumukh Chowdhary Kosaraju</h1>
     </div>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Hello! I'm a computer science student passionate about building useful and visually appealing applications. I enjoy working with backend and frontend tech and love taking on new challenges.</p>
+    <p>I am a driven Computer Science undergraduate with a strong interest in full-stack development, problem-solving, and building scalable, user-centric software solutions. I enjoy transforming complex problems into elegant code and constantly seek opportunities to grow as a developer and innovator.</p>
   </section>
 
-<section id="education">
-  <h2>Education</h2>
-  <ul>
-    <li>
-      <strong>B.Tech in Computer Science and Engineering – RVR & JC College of Engineering (2023–2027)</strong><br>
-      CGPA: <strong>9.79/10</strong>
-    </li>
-    <li>
-      <strong>BSc in Data Science – Indian Institute of Technology Madras(IITM) (2023-2027)</strong><br>
-      CGPA: <strong>7.43/10</strong>
-    </li>
-    <li>
-      <strong>Intermediate – Sri Chaitanya Junior College (2021-2023)</strong><br>
-      Percentage: <strong>93.3%</strong>
-    </li>
-    <li>
-      <strong>10th Grade – Bhashayam Blooms School, CBSE (2021)</strong><br>
-      Percentage: <strong>91%</strong>
-    </li>
-  </ul>
-</section>
-
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Tech in Computer Science and Engineering – RVR & JC College of Engineering (2023–2027)</strong><br>CGPA: <strong>9.61/10</strong></li>
+      <li><strong>BSc in Data Science – Indian Institute of Technology Madras (2023–2027)</strong><br>CGPA: <strong>7.43/10</strong></li>
+      <li><strong>Intermediate – Sri Chaitanya Junior College (2021–2023)</strong><br>Percentage: <strong>93.3%</strong></li>
+      <li><strong>10th Grade – Bhashyam Blooms School, CBSE (2021)</strong><br>Percentage: <strong>91%</strong></li>
+    </ul>
+  </section>
 
   <section id="skills">
-    <h2>Skills</h2>
+    <h2>Technical Skills</h2>
     <ul>
-      <li>💻 Python, Java, C</li>
-      <li>🌐 HTML, CSS, JavaScript</li>
-      <li>🛠️ Flask, SQL, Vue.js</li>
-      <li>⚙️ Git, GitHub, Android Studio, Postman</li>
+      <li>💻 Programming Languages: Python, Java, C</li>
+      <li>🌐 Web Development: HTML, CSS, JavaScript</li>
+      <li>🛠️ Frameworks & Tools: Flask, SQL, Vue.js, Git, GitHub, Postman, Android Studio</li>
     </ul>
   </section>
 
   <section id="achievements">
     <h2>Achievements</h2>
     <ul>
-      <li>🏆 Built a full-stack Quiz website and Household Services web</li>
-      <li>🥇 Solved 100+ LeetCode problems</li>
-      <li>🎯 Placed Top 3 in my department for Academics</li>
+      <li>🏆 Designed and deployed multiple full-stack web applications including a Quiz Portal and Household Services platform</li>
+      <li>🥇 Solved 100+ algorithmic problems on LeetCode, consistently improving problem-solving skills</li>
+      <li>🎯 Ranked among the Top 3 in academic performance within the department</li>
     </ul>
   </section>
 
@@ -65,40 +162,40 @@
     <h2>Projects</h2>
     <div class="project">
       <h3>Household Services Web App</h3>
-      <p>Flask-based web app where customers can book services and professionals can register and get verified.</p>
+      <p>A full-stack platform developed using Flask, allowing users to book services while enabling professionals to register and be verified. Focused on role-based access and user experience.</p>
       <a href="https://github.com/Sumukh-Chowdhary/House-hold-Services-App" target="_blank">View on GitHub</a>
     </div>
     <div class="project">
       <h3>Student Quiz Portal</h3>
-      <p>A multi-user, full-stack exam preparation platform built using Flask and Vue.js. It features role-based access (Admin & Users), real-time quiz management, scoring, scheduling, reminders, and performance reporting — all integrated with Redis, Celery, and SQLite</p>
+      <p>A robust exam preparation system built with Flask and Vue.js. Features include dynamic quiz creation, scheduling, automated scoring, Redis-Celery-based notifications, and performance tracking.</p>
       <a href="https://github.com/Sumukh-Chowdhary/Quiz-Masters" target="_blank">View on GitHub</a>
     </div>
     <div class="project">
       <h3>Hotel Review App</h3>
-      <p>A simple review with a admin and users. First ever android studio work so its doesnt has much features</p>
+      <p>My first App to simple indeed</p>
       <a href="https://github.com/Sumukh-Chowdhary/Hotel-Review-App" target="_blank">View on GitHub</a><br>
-      <a href="app-debug.apk">Download APK here</a>
+      <a href="app-debug.apk">Download APK</a>
     </div>
   </section>
 
   <section id="certifications">
     <h2>Certifications</h2>
     <ul>
-      <li>✔️ Foundation Certificate in Data Science – IIT Madras – <a href="https://drive.google.com/file/d/1ybuBvF_jtcecKDikigBhZOtzInNBpI1O/view?usp=sharing">Certificate</a></li>
+      <li>✔️ Foundation Certificate in Data Science – IIT Madras – <a href="https://drive.google.com/file/d/1ybuBvF_jtcecKDikigBhZOtzInNBpI1O/view?usp=sharing" target="_blank">View Certificate</a></li>
     </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:kschowdhary04@gmail.com">kschowdhary04@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/Sumukh-Chowdhary" target="_blank">github.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/sumukh-chowdhary-kosaraju-828775170/" target="_blank">linkedin.com/in/</a></p>
-    <p>Contact No: +91 7382455222</p>
-    <p>LeetCode: <a href="https://leetcode.com/u/Sumukh_Chowdhary/" target="_blank">leetcode.com</a></p>
+    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:kschowdhary04@gmail.com">kschowdhary04@gmail.com</a></p>
+    <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Sumukh-Chowdhary" target="_blank">github.com/Sumukh-Chowdhary</a></p>
+    <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/sumukh-chowdhary-kosaraju-828775170/" target="_blank">linkedin.com/in/sumukh-chowdhary</a></p>
+    <p><i class="fas fa-phone"></i> Phone: +91 7382455222</p>
+    <p><i class="fas fa-code"></i> LeetCode: <a href="https://leetcode.com/u/Sumukh_Chowdhary/" target="_blank">leetcode.com/u/Sumukh_Chowdhary</a></p>
   </section>
 
   <footer>
-    <p>© 2025 Sumukh. All rights reserved.</p>
+    <p>© 2025 Sumukh Chowdhary. All rights reserved.</p>
   </footer>
 </body>
 </html>
